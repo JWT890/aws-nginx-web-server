@@ -11,4 +11,9 @@ Then type aws configure and type in your access key, secret key, region, and oup
 Enter in something like this:  
 <img width="718" height="438" alt="image" src="https://github.com/user-attachments/assets/e6b77542-ab28-403e-8b03-8eaa7de0c052" />  
 And save it.  
+Then type echo "Hello from S3" > /tmp/test-file.txt, then type aws s3 cp /tmp/test-file.txt s3://nginxbucket10.  
+Then type aws s3 ls s3://nginxbucket10/ to verify its in the there:  
+<img width="389" height="38" alt="image" src="https://github.com/user-attachments/assets/ee879882-d306-406c-affa-b31ac3abd509" />  
+<img width="1515" height="97" alt="image" src="https://github.com/user-attachments/assets/62cf4ef7-4098-46da-9eed-8df8ac1ee3ec" />  
+
 
