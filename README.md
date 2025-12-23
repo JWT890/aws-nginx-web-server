@@ -21,5 +21,15 @@ Then type ~/s3-sync.sh to write a script
 And write:  
 <img width="350" height="186" alt="image" src="https://github.com/user-attachments/assets/4fcabffd-69ca-46d6-be01-0c06e309ac6e" />  
 Then save it and type chmod +x ~/s3-sync.sh and then ./s3-sync.sh
+Then type echo "<h3>S3 Content</h3>" > /tmp/s3-content.html and then aws s3 cp /tmp/s3-content.html s3://bucketname/.  
+Then run curl http://localhost/s3/s3-content.html and go the web browser and type http://localhost:   
+<img width="813" height="324" alt="image" src="https://github.com/user-attachments/assets/2c930ff2-ebf5-4c11-b8eb-8a48ec553d4f" />  
+You will also see the uploaded portion that says S3 Content along with the files that were uploaded into the bucket:  
+<img width="481" height="354" alt="image" src="https://github.com/user-attachments/assets/22eb1b3a-85c9-42e4-b30e-ccf6ca4c4043" />  
+Test FIle upload:  
+<img width="1896" height="798" alt="image" src="https://github.com/user-attachments/assets/ee72d5f8-0120-433d-b20d-616d6ecdb89e" />
+
+
+
 
 
