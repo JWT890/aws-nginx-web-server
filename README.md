@@ -16,23 +16,7 @@ Then type aws s3 ls s3://nginxbucket10/ to verify its in the there:
 <img width="389" height="38" alt="image" src="https://github.com/user-attachments/assets/ee879882-d306-406c-affa-b31ac3abd509" />  
 <img width="1515" height="97" alt="image" src="https://github.com/user-attachments/assets/62cf4ef7-4098-46da-9eed-8df8ac1ee3ec" />  
 Next its time to configure Nginx, type sudo nano /etc/nginx/sites-available/s3-project and enter in this configuration:  
-server {  
-    listen 80;  
-    server_name localhost;  
-    
-    root /var/www/s3-project;  
-    index index.html;  
-    
-    location / {  
-        try_files $uri $uri/ =404;  
-    }  
-    
-    # Proxy requests to S3 (optional advanced feature)  
-    location /s3/ {  
-        proxy_pass https://nameofyourbucket.s3.amazonaws.com/;  
-        proxy_set_header Host nameofyourbucket.s3.amazonaws.com;  
-    }  
-}  
+<img width="374" height="305" alt="image" src="https://github.com/user-attachments/assets/08c17d04-9ea4-48cd-b0ac-981d970ab30d" />    
 Then type ~/s3-sync.sh to write a script
 And write:  
 <img width="350" height="186" alt="image" src="https://github.com/user-attachments/assets/4fcabffd-69ca-46d6-be01-0c06e309ac6e" />  
